@@ -44,6 +44,8 @@ cd ResumeLLM
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
+
+pip install -r requirements.txt
 ```
 ### 3. ตั้งค่า Environment Variable
 ```bash
