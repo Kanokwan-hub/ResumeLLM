@@ -54,8 +54,8 @@ set GEMINI_API_KEY="your_api_key_here"      # Windows
 ```bash
 uvicorn main:app --reload
 ```
-Server จะรันที่:
-http://127.0.0.1:8000/ (root) 
+Server จะรันที่:  
+http://127.0.0.1:8000/ (root)  
 http://127.0.0.1:8000/docs (Swagger UI ทดสอบ API)
 
 ## การใช้งาน API
