@@ -1,30 +1,30 @@
-# ResumeLLM
 # Resume Analyzer with LLM
 
-โปรเจกต์นี้เป็น **FastAPI application** สำหรับวิเคราะห์ความเหมาะสมของ **Resume (PDF)** กับ **Job Description (TXT)** โดยใช้ **Google Gemini API** เพื่อแปลงข้อความใน Resume เป็น JSON และให้คะแนนความตรงกันกับ JD
+## โจทย์
+บริษัทต้องการพัฒนาเครื่องมือในการวิเคราะห์ Resume ของผู้สมัครว่าตรงกับตำแหน่งงานที่มองหาไว้หรือไม่  
+
+**กำหนดให้**
+- Resume เป็น **PDF เท่านั้น**  
+- JD ใช้ตำแหน่งงานที่สมัครเข้ามาคือ **AI & Data Solution Intern**  
+- สิ่งที่ต้องวิเคราะห์ ประกอบด้วย  
+  - ประสบการณ์ศึกษา  
+  - ทักษะ  
+  - ความรู้  
+  - เครื่องมือที่ต้องใช้งาน  
+- ส่งผลออกมาเป็น **คะแนน** และ **ผลการวิเคราะห์พร้อมเหตุผลของคะแนน**  
+- ต้องมีการใช้ **LLM** ในการประมวลผล (สามารถเลือก Gemini, OpenAI หรืออื่น ๆ ได้)  
+- เขียนด้วย **Python** หากทำในรูปแบบ **API (FastAPI)** จะได้คะแนนพิเศษ  
+- ผลการวิเคราะห์คืนค่าเป็น **JSON** (สามารถกำหนดโครงสร้างเองได้)  
 
 ---
 
-## คุณสมบัติ
-
-- อัปโหลดไฟล์ `resume.pdf` และ `jd.txt`
-- แปลง Resume เป็น JSON: `education`, `skills`, `knowledge`, `tools`
-- วิเคราะห์ความตรงกันกับ JD และให้คะแนนโดยละเอียด
-- คืนค่า JSON พร้อมคะแนน, เหตุผลประกอบ, จุดเด่น และข้อปรับปรุง
+## ฟีเจอร์หลัก
+- รองรับการอัปโหลด **Resume (PDF)** และ **Job Description (txt)**  
+- ใช้ **LLM (Gemini API)** เพื่อแปลงและวิเคราะห์ข้อมูล  
+- คำนวณคะแนนความเหมาะสม (0-100) ของผู้สมัครกับ JD  
+- ส่งคืนผลลัพธ์เป็น **JSON** ที่มีรายละเอียดทั้งคะแนน, เหตุผล, จุดแข็ง และข้อปรับปรุง  
 
 ---
 
-## การติดตั้ง
+## Project Structure
 
-```bash
-# Clone repository
-git clone <your-repo-url>
-cd <your-repo-folder>
-
-# สร้าง virtual environment (แนะนำ)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-
-# ติดตั้ง dependencies
-pip install fastapi uvicorn pdfplumber google-generativeai
