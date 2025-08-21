@@ -63,5 +63,4 @@ POST /analyze_resume
 - resume_pdf: Resume ของผู้สมัคร (PDF)
 - jd_text: JD ของตำแหน่งงาน (txt)
 
-## Flowchart กระบวนการทำงาน
-!("Flow chart.jpg")
+![Flow chart](images/Flow chart.jpg)
