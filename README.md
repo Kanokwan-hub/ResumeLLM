@@ -23,15 +23,11 @@
 ## Files Structure
 ```bash
 ResumeLLM/
-│── api.py # ไฟล์หลักสำหรับ FastAPI
-│── requirements.txt # รายการ dependencies
 │── README.md # เอกสารประกอบโปรเจกต์
-│
-├── sample_data/ # ตัวอย่างไฟล์ทดสอบ
-│ ├── Resume.pdf
-│ └── JD.txt
-│
-└── venv/ # Virtual environment
+│── api.py # ไฟล์หลักสำหรับ FastAPI
+│── Resume.pdf
+│── JD.txt
+│── requirements.txt # รายการ dependencies
 ```
 ## Installation
 ### 1. Clone Repository
