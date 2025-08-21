@@ -14,7 +14,7 @@
 - เขียนด้วย **Python** หากทำในรูปแบบ **API (FastAPI)** จะได้คะแนนพิเศษ  
 - ผลการวิเคราะห์คืนค่าเป็น **JSON** (สามารถกำหนดโครงสร้างเองได้)  
 
-## ฟีเจอร์หลัก
+## Main Features
 - รองรับการอัปโหลด **Resume (PDF)** และ **Job Description (txt)**  
 - ใช้ **LLM (Gemini API)** เพื่อแปลงและวิเคราะห์ข้อมูล  
 - คำนวณคะแนนความเหมาะสม (0-100) ของผู้สมัครกับ JD  
@@ -23,12 +23,27 @@
 ## Files Structure
 ```bash
 ResumeLLM/
-│── api.py # ไฟล์หลักสำหรับ FastAPI
-│── README.md # เอกสารประกอบ
+│__ api.py # ไฟล์หลักสำหรับ FastAPI
+│__ README.md # เอกสารประกอบ
+│__ requirements.txt # รายการ dependencies
+|
+|__ sample_data/ # ตัวอย่างไฟล์ทดสอบ
+│ |__ Resume.pdf
+│ |__ JD.txt
 │
-├── sample_data/ # ตัวอย่างไฟล์ทดสอบ
-│ ├── Resume.pdf
-│ └── JD.txt
-│
-└── venv/
+|__ venv/
 ```
+## Installation
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/ResumeLLM.git
+cd ResumeLLM
+```
+### 2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+```
+
+
