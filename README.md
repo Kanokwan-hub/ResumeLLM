@@ -26,11 +26,11 @@
 ```bash
 ResumeMatch-LLM/
 │── api.py # ไฟล์หลักสำหรับ FastAPI
-│── README.md # เอกสารประกอบโปรเจกต์
+│── README.md # เอกสารประกอบ
 │
 ├── sample_data/ # ตัวอย่างไฟล์ทดสอบ
 │ ├── Resume.pdf
 │ └── JD.txt
 │
-└── venv/ # (ถ้ามี) Virtual environment
+└── venv/
 ```
