@@ -23,15 +23,15 @@
 ## Files Structure
 ```bash
 ResumeLLM/
-│__ api.py # ไฟล์หลักสำหรับ FastAPI
-│__ README.md # เอกสารประกอบ
-│__ requirements.txt # รายการ dependencies
-|
-|__ sample_data/ # ตัวอย่างไฟล์ทดสอบ
-│ |__ Resume.pdf
-│ |__ JD.txt
+│── api.py # ไฟล์หลักสำหรับ FastAPI
+│── requirements.txt # รายการ dependencies
+│── README.md # เอกสารประกอบโปรเจกต์
 │
-|__ venv/
+├── sample_data/ # ตัวอย่างไฟล์ทดสอบ
+│ ├── Resume.pdf
+│ └── JD.txt
+│
+└── venv/ # Virtual environment
 ```
 ## Installation
 ### 1. Clone Repository
@@ -45,5 +45,23 @@ python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 ```
+### 3. ตั้งค่า Environment Variable
+```bash
+export GEMINI_API_KEY="your_api_key_here"   # macOS / Linux
+set GEMINI_API_KEY="your_api_key_here"      # Windows
+```
+### 4. รัน FastAPI Server
+```bash
+uvicorn main:app --reload
+```
+Server จะรันที่:
+http://127.0.0.1:8000/ (root)
+http://127.0.0.1:8000/docs (Swagger UI ทดสอบ API)
 
+## การใช้งาน API
+**Endpoint:**
+POST /analyze_resume
+**Parameters:**
+- resume_pdf: Resume ของผู้สมัคร (PDF)
+- jd_text: JD ของตำแหน่งงาน (txt)
 
