@@ -22,9 +22,9 @@
 - คำนวณคะแนนความเหมาะสม (0-100) ของผู้สมัครกับ JD  
 - ส่งคืนผลลัพธ์เป็น **JSON** ที่มีรายละเอียดทั้งคะแนน, เหตุผล, จุดแข็ง, ข้อปรับปรุง และ สรุปผล  
 
-## Project Structure
+## Files Structure
 ```bash
-ResumeMatch-LLM/
+ResumeLLM/
 │── api.py # ไฟล์หลักสำหรับ FastAPI
 │── README.md # เอกสารประกอบ
 │
