@@ -25,8 +25,8 @@
 ResumeLLM/
 │── README.md # เอกสารประกอบโปรเจกต์
 │── api.py # ไฟล์หลักสำหรับ FastAPI
-│── Resume.pdf
-│── JD.txt
+│── Resume.pdf # ไฟล์ resume สำหรับทดสอบ
+│── JD.txt # ไฟล์ JD สำหรับทดสอบ
 │── requirements.txt # รายการ dependencies
 ```
 ## Installation
@@ -62,4 +62,3 @@ POST /analyze_resume
 **Parameters:**
 - resume_pdf: Resume ของผู้สมัคร (PDF)
 - jd_text: JD ของตำแหน่งงาน (txt)
-
