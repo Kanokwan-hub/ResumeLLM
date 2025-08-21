@@ -23,6 +23,7 @@
 - ส่งคืนผลลัพธ์เป็น **JSON** ที่มีรายละเอียดทั้งคะแนน, เหตุผล, จุดแข็ง, ข้อปรับปรุง และ สรุปผล  
 
 ## Project Structure
+```bash
 ResumeMatch-LLM/
 │── api.py # ไฟล์หลักสำหรับ FastAPI
 │── README.md # เอกสารประกอบโปรเจกต์
@@ -32,4 +33,4 @@ ResumeMatch-LLM/
 │ └── JD.txt
 │
 └── venv/ # (ถ้ามี) Virtual environment
-
+```
