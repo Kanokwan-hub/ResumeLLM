@@ -61,6 +61,6 @@ http://127.0.0.1:8000/docs (Swagger UI ทดสอบ API)
 **Endpoint:**
 POST /analyze_resume  
 **Parameters:**  
-`resume_pdf`: Resume ของผู้สมัคร (PDF)
+`resume_pdf`: Resume ของผู้สมัคร (PDF)  
 `jd_text`: JD ของตำแหน่งงาน (txt)
 
