@@ -17,7 +17,8 @@
 ## Main Features
 - รองรับการอัปโหลด **Resume (PDF)** และ **Job Description (txt)**  
 - ใช้ **LLM (Gemini API)** เพื่อแปลงและวิเคราะห์ข้อมูล  
-- suitability_score (คะแนนความเหมาะสม) คำนวณจากค่าเฉลี่ยของคะแนนทั้ง 4 หมวด ได้แก่ Education, Skills, Knowledge และ Tools (ช่วงคะแนน 0–100)
+- suitability_score (คะแนนความเหมาะสม) คำนวณจากค่าเฉลี่ยของคะแนนทั้ง 4 หมวด  
+  ได้แก่ Education, Skills, Knowledge และ Tools (ช่วงคะแนน 0–100)
 - ส่งคืนผลลัพธ์เป็น **JSON** ที่มีรายละเอียดทั้งคะแนน, เหตุผล, จุดแข็ง, ข้อปรับปรุง และ สรุปผล  
 
 ## Files Structure
